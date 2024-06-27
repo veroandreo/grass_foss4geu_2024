@@ -36,13 +36,13 @@ ln -s $HOME/grass/bin.*/grass* $HOME/.local/bin/grass
 
 cd ..
 
-mkdir -p grass_ncsu_2023/grassdata \
+mkdir -p grass_foss4geu_2024/grassdata \
   && curl -SL https://tilia.cnr.ncsu.edu/GRASS-R-workshop-2023/grassdata_eu_laea_northern_italy_LST_1km_daily_celsius_reconstructed_ZLIB.zip > LST.zip \
   && unzip -qq LST.zip \
-  && mv grassdata_ogh/eu_laea grass_ncsu_2023/grassdata \
+  && mv grassdata_ogh/eu_laea grass_foss4geu_2024/grassdata \
   && rm LST.zip \
+  && rm -rf grassdata_ogh \
   && rm -rf grassdata_eu_laea_northern_italy_LST_1km_daily_celsius_reconstructed_ZLIB
 
-wget -P grass_ncsu_2023/ https://github.com/petrasovaa/vero_grass_ncsu_2023/raw/main/data/aedes_albopictus.gpkg
+wget -P grass_foss4geu_2024/ https://github.com/petrasovaa/vero_grass_ncsu_2023/raw/main/data/aedes_albopictus.gpkg
 
-#wget -P grass_ncsu_2023 https://github.com/mrmaxent/Maxent/raw/master/ArchivedReleases/3.4.4/maxent.jar
