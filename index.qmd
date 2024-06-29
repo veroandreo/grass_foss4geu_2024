@@ -8,7 +8,7 @@ toc: true
 
 Traditionally, species distribution models (SDM) use climatic data as predictors of habitat suitability for the target species. In this studio, we will explore the use of satellite data to derive relevant predictors. The satellite data processing, from download to analysis, will be performed using GRASS GIS software functionality. Then, we'll read our predictors within R and perform SDM, visualize and analyze results there, to then exemplify how to write the output distribution maps back into GRASS.
 
-# Getting ready
+# Run this session online
 
 We'll run this session online within the [Whole Tale platform](https://wholetale.org/). 
 Whole Tale is an NSF-funded Data Infrastructure Building Block (DIBBS) initiative
@@ -19,8 +19,16 @@ used to produce research findings. It's also great for teaching, as participants
 do not need to install all software packages required. They only need to register 
 with institutional or personal email and they are ready to go!
 
-**Run the session online:** [Satellite data for SDM with GRASS GIS and R]()
+**Run the session online:** [Let's combine GRASS, Python and R]()
 
+If The Whole Tale does not work, we'll use Google Colab. In that case, we'll
+need to open the notebooks stored [here]() within Colab as shown below:
+
+<img src="assets/img/colab_notebooks.png" width="85%"/>
+
+Furthermore, we'll need to set up our environment within Google Drive. See @sec-data.
+
+# Run this session locally
 
 ## Software 
 
@@ -86,20 +94,47 @@ The following Python libraries should be installed beforehand:
 We will use the software **MaxEnt** to model habitat suitability. It can be 
 downloaded from: <https://biodiversityinformatics.amnh.org/open_source/maxent/>
 
-## Data
+## Data {#sec-data}
 
-Download the following ready to use *project* with reconstructed daily LST 
-averages (@metz_new_2017) for Northern Italy. This dataset is courtesy of
-[mundialis GmbH & Co. KG](mundialis.de/en/).
+<img src="assets/img/studio/aedes_albopictus.jpg" width="30%" align="right"/>
 
-* [Northern Italy (1.7 Gb)](https://drive.google.com/file/d/1z1b2NLC4Z6yzz_57RddTdRRK_gUkd7fU/view?usp=sharing)
+- Records of *Aedes albopictus* (Asian tiger mosquito) in Northern Italy
+  downloaded from [GBIF](https://www.gbif.org/)
+- Average daily MODIS LST reconstructed by 
+  [mundialis GmbH & Co. KG](https://www.mundialis.de/en/) based on @metz_new_2017:
+    - 1 km spatial resolution
+    - Converted to Celsius degrees
 
-We will also use a points vector map representing *Aedes albopictus* presence data:
+<img src="assets/img/studio/lst_north_italy_2014.png" width="40%" align="right" padding-right="15px"/>
 
-* [Mosquito occurrence data](data/aedes_albopictus.gpkg)
+### Get the sample project
 
+- Create a folder named `grass_foss4geu_2024`
+- Within `grass_foss4geu_2024` create a folder named `grassdata`
+- Download the [eu_laea project with LST mapset](https://drive.google.com/file/d/1z1b2NLC4Z6yzz_57RddTdRRK_gUkd7fU/view?usp=sharing)
+and unzip it within your `grassdata` folder
+- Download [mosquito data](https://github.com/veroandreo/grass_ncsu_2023/raw/main/data/aedes_albopictus.gpkg) and drop it within `grass_foss4geu_2024`
 
-## References
+The `grass_foss4geu_2024` folder's tree should look like this:
+
+```         
+  grass_foss4geu_2024/
+  ├── aedes_albopictus.gpkg
+  └── grassdata
+      └── eu_laea
+          ├── italy_LST_daily
+          └── PERMANENT
+
+```
+
+## Clone the repo and execute notebooks
+
+Once you are set with software installation and data, you should
+download or clone the following repo:
+<https://github.com/veroandreo/grass_foss4geu_2024>
+and execute notebooks in Jupyter and Rstudio, respectively.
+
+# References
 
 :::{#refs}
 :::

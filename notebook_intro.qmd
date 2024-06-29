@@ -31,7 +31,7 @@ software creates a project with demo data automatically.
 - **Project**: GRASS projects are simply folders storing your geospatial data
   with common coordinate reference system (CRS), ensuring consistency of your
   data.
-- **Mapset**: Data is further organized into subprojects called mapsets, which
+- **Mapset**: Data is further organized into subprojects called *mapsets*, which
   you can use to manage different subregions or analyses within a project. 
   When  creating a new project, GRASS GIS automatically creates a special 
   mapset called *PERMANENT* which is used to store source datasets for your
@@ -162,18 +162,18 @@ on variables derived from daily LST data
 <img src="assets/img/studio/lst_north_italy_2014.png" width="40%" align="right" padding-right="15px"/>
 
 
-### Get the sample location
+### Get the sample project
 
-- Create a folder named `grass_ncsu_2023`
-- Within `grass_ncsu_2023` create a folder named `grassdata`
-- Download and unzip [eu_laea location with LST mapset](https://drive.google.com/file/d/1z1b2NLC4Z6yzz_57RddTdRRK_gUkd7fU/view?usp=sharing)
-and unzip within your `grassdata` folder
-- Download [mosquito data](https://github.com/veroandreo/grass_ncsu_2023/raw/main/data/aedes_albopictus.gpkg) and drop it within `grass_ncsu_2023`
+- Create a folder named `grass_foss4geu_2024`
+- Within `grass_foss4geu_2024` create a folder named `grassdata`
+- Download the [eu_laea project with LST mapset](https://drive.google.com/file/d/1z1b2NLC4Z6yzz_57RddTdRRK_gUkd7fU/view?usp=sharing)
+and unzip it within your `grassdata` folder
+- Download [mosquito data](https://github.com/veroandreo/grass_ncsu_2023/raw/main/data/aedes_albopictus.gpkg) and drop it within `grass_foss4geu_2024`
 
-The `grass_ncsu_2023` folder's tree should look like this:
+The `grass_foss4geu_2024` folder's tree should look like this:
 
 ```         
-  grass_ncsu_2023/
+  grass_foss4geu_2024/
   ├── aedes_albopictus.gpkg
   └── grassdata
       └── eu_laea
@@ -184,10 +184,11 @@ The `grass_ncsu_2023` folder's tree should look like this:
 
 # GRASS GIS HELP!!!
 
+- [GRASS GIS Reference Manual](https://grass.osgeo.org/grass-stable/manuals/index.html): Index with links to all GRASS docs
 - [g.manual](https://grass.osgeo.org/grass76/manuals/g.manual.html):
   in the main GUI under Help or just pressing *F1*
 - `--help` or `--h` flag after the module name in the terminal
-- [GRASS website](https://grass.osgeo.org/): rich [learn](https://grass.osgeo.org/learn/) section with links to videos, tutorials, courses, books, etc.
+- [GRASS website](https://grass.osgeo.org/): rich [tutorials](https://grass.osgeo.org/learn/tutorials/) section.
 - [GRASS wiki](https://grasswiki.osgeo.org/wiki/GRASS-Wiki): examples,
   explanations on particular modules or tasks,
   [tutorials](https://grasswiki.osgeo.org/wiki/Category:Tutorial),

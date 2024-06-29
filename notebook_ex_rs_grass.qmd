@@ -9,6 +9,7 @@ format:
     code-fold: false
 execute:
   eval: false
+  keep-ipynb: true
 jupyter: python3
 ---
 
