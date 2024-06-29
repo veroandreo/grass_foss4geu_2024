@@ -19,7 +19,7 @@ used to produce research findings. It's also great for teaching, as participants
 do not need to install all software packages required. They only need to register 
 with institutional or personal email and they are ready to go!
 
-**Run the session online:** [Let's combine GRASS, Python and R]()
+**Run the session online:** [Let's combine GRASS, Python and R](https://dashboard.wholetale.org/run/6680363e7b5d52be57b740c5?tab=metadata)
 
 If The Whole Tale does not work, we'll use Google Colab. In that case, we'll
 need to open the notebooks stored [here]() within Colab as shown below:
