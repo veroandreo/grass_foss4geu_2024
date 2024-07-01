@@ -2,7 +2,7 @@
 title: "Let's combine GRASS, Python and R"
 subtitle: "Satellite time series data for species distribution modeling"
 author: "Verónica Andreo"
-date: '`r Sys.Date()`'
+date: today
 toc: true
 ---
 

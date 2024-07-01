@@ -2,7 +2,7 @@
 title: "Intro to GRASS GIS"
 subtitle: "Basic notions, interfaces and temporal framework"
 author: "Veronica Andreo"
-date: '`r Sys.Date()`'
+date: today
 editor: 
   markdown: 
     wrap: 80

@@ -1,7 +1,7 @@
 ---
 title: "Part 2: Modelling with R"
 author: Verónica Andreo
-date: '`r Sys.Date()`'
+date: today
 format: 
   html: 
     code-tools: true
