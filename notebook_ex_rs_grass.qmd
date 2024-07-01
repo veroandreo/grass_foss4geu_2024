@@ -122,10 +122,9 @@ initializing GRASS GIS
 import os
 
 # Data directory
-homedir = os.path.join(os.path.expanduser('~'), "grass_ncsu_2023")
+homedir = os.path.join(os.path.expanduser('~'), "grass_foss4geu_2024")
 
 # GRASS GIS database variables
-#grassbin = "grass-dev"
 grassbin = "grass"
 grassdata = os.path.join(homedir, "grassdata")
 project = "eu_laea"
